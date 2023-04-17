@@ -22,13 +22,22 @@ h2{
     margin-top: 5vh;
 }
 
+h3 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #222;
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.box{
+.box-1.active{
+    position: relative;
     margin: 10vh 0;
     width: 50%;
     height: 30em;
@@ -41,20 +50,49 @@ h2{
     -moz-box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.7);
     box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.7);
     z-index: 2;
+    transform: translateX(0);
 }
 
-h3{
-    text-align: center;
-    margin-bottom: 2em;
-    font-size: 1.5rem;
-    font-weight: 500;
+.box-1{
+    transform: translateX(-1300px);
+    transition: 1s ease;
+    background-color: #fafafa;
+    width: 50%;
+    height: 30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
 
+.box-2 {
+    margin: 10vh 0;
+    width: 50%;
+    height: 30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    display: none;
+}
+
+#prg-fun{
+    font-size: 1.3em;
+    text-align: center;
 }
 
 .input-box{
     padding: 15px 0;
     position: relative;
-    margin-left: 1em;
 }
 
 .input-box input{
@@ -114,8 +152,8 @@ h3{
 
 .btn-prox{
     position: absolute;
-    right: 23em;
-    top: 36em;
+    right: 2em;
+    top: 27em;
     width: 7rem;
     height: 2.2rem;
     border: 1px solid #681cff;
@@ -134,18 +172,24 @@ h3{
     transition: .5s;
 }
 
-.cadastro-gerente.active{
+.btn-voltar{
+    position: absolute;
+    right: 22em;
+    top: 26em;
+    width: 7rem;
+    height: 2.2rem;
+    border: 1px solid #681cff;
+    border-radius: 3px;
+    background-color: #fafafa;
+    font-size: 1em;
+    font-weight: 500;
+    color: #111;
+    cursor: pointer;
+}
+
+.btn-voltar:hover{
+    color: #fafafa;
+    background-color: #681cff;
     transition: .5s;
-    display: none;
 }
 
-.cadastro-funcionario{
-    display: none;
-    transform: translateX(400px)
-}
-
-.cadastro-funcionario.active{
-    display: block;
-    transform: translateX(-40px);
-    transition: 1s;
-}
