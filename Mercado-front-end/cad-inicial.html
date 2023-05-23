@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cad-inicial.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <h1>SICEV</h1>
+        <div class="container-fluid">
+            <h2>Cadastro Gerente</h2>
+            <div class="main-container">
+                <div class="left">
+                    <img src="img/Mobile login-pana.svg" alt="imagem-cadastro">
+                </div>
+                <div class="right">
+                    <div class="input-box">
+                        <input type="text" class="input left" required>
+                        <label for="">Nome Completo:</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="input right" required>
+                        <label for="">Email:</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="input left" required>
+                        <label for="">RG:</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="input right" required>
+                        <label for="">CPF:</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="input left" required>
+                        <label for="">Telefone:</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" id="senha-left" required>
+                        <label for="">Senha:</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" id="consenha-right" onkeyup="consenha()" required> 
+                        <label for="">Confirmar Senha:</label>
+                    </div>
+                    <button type="button" onclick="continuar()">Continuar</button>
+                </div>
+            </div>
+        </div>  
+    </div>
+</body>
+</html>

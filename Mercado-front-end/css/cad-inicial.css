@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family= Montserrat :wght@300;400;500;600;700;800 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, #3d7c98 0%, #73b0cd 46%, #a8dff1 96%)
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    color: #fafafa;
+    margin-top: .7em;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em ;
+    font-weight: 600;
+    color: #336c85;
+    display: flex;
+    justify-content: center;
+    margin-top: .4em;
+}
+
+.container-fluid{
+    flex-direction: row;
+    background-color: #fafafa;
+    width: 65rem;
+    height: 35rem;
+    border-radius: 10px;
+    margin-top: 6rem;
+    -webkit-box-shadow: 2px 3px 15px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 3px 15px -3px rgba(0,0,0,0.75);
+    box-shadow: 2px 3px 15px -3px rgba(0,0,0,0.75);
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+}
+
+img{
+    width: 30em;
+    height: 30em;
+}
+
+.right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+
+.input-box{
+    display: flex;
+    align-items: center;
+
+
+    
+}
+
+.input-box input{
+    width: 15em;
+    height: 2.4em;
+    outline: none;
+    border: 1px solid #a9a9a9;
+    padding: 0px 5px 0px 5px;
+    border-radius: 2px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: .8em;
+    color: #336c85;
+    cursor: pointer;
+}
+
+.input-box input:hover{
+    border: 1px solid #336c85;
+    transition: .5s ease;
+}
+
+.input-box input:focus{
+    border: 1px solid #4562c0;
+}
+
+.input-box label{
+    position: absolute;
+}
+
+.input.right{
+    margin-left: 3.5em;
+}
+
+#senha-left{
+    margin-left: 3.5em;
+}
+.input-box:hover{
+    color:
+    transform:translateX(50px);
+    
+}
